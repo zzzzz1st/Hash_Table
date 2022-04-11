@@ -62,8 +62,6 @@ class ChainedHashTable:
     def __loadCalc(self):
         if self.size == 0:
             self.__loadFactor = 0
-        elif self.__loadFactor == 1.0:
-            return
         else:
             self.__loadFactor = self.__loadSum / self.size
 
